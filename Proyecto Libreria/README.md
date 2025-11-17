@@ -1,7 +1,7 @@
 # Proyecto Inventario de Libros  
-Autor: [Tu Nombre Aquí]
+Armando Salazar
 
-Este proyecto es una aplicación web Full Stack diseñada para gestionar el inventario de una librería.  
+Este proyecto es una aplicación web diseñada para gestionar el inventario de una librería.  
 Incluye una base de datos relacional en MySQL, un backend en Node.js con Express y un frontend construido en React con Vite.  
 La aplicación permite realizar un CRUD completo de libros, incluyendo su relación con autores.
 
