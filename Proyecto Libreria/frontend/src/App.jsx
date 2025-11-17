@@ -88,7 +88,7 @@ function App() {
     setMensaje("");
     setError("");
 
-    // Validación muy básica
+    // Validación
     if (
       !formLibro.titulo ||
       !formLibro.paginas ||
