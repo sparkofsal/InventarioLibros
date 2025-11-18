@@ -9,7 +9,7 @@ const { query } = require('../db');
 // Obtiene todos los autores
 router.get('/', async (req, res) => {
   try {
-    const sql = 'SELECT * FROM Autores';
+    const sql = 'SELECT * FROM Autores'; // Suponiendo que la tabla se llama 'Autores'
     const rows = await query(sql);
 
     res.status(200).json(rows);

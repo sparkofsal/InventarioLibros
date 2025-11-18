@@ -29,7 +29,7 @@ function App() {
   // Modo edición o creación
   const [modoEdicion, setModoEdicion] = useState(false);
 
-  // Mensaje de éxito simple
+  // Mensaje de éxito
   const [mensaje, setMensaje] = useState("");
 
   // Al cargar el componente, obtenemos libros y autores
@@ -100,7 +100,7 @@ function App() {
       return;
     }
 
-    // Preparamos datos a enviar (asegurando tipos numéricos)
+    // Esto es para preparar datos a enviar (asegurando tipos numéricos)
     const payload = {
       titulo: formLibro.titulo,
       paginas: Number(formLibro.paginas),
@@ -167,7 +167,7 @@ function App() {
     });
   };
 
-  // Eliminar libro
+  // Eliminar libro, le agregue el mensaje de confirmación
   const manejarEliminar = async (libro) => {
     const confirmar = window.confirm(
       `¿Seguro que deseas eliminar el libro "${libro.titulo}"?`
@@ -273,7 +273,7 @@ function App() {
           <h2 style={{ marginBottom: "0.75rem" }}>Lista de libros</h2>
 
           {libros.length === 0 && !cargando ? (
-            <p>No hay libros registrados.</p>
+            <p>No hay ningun libro registrados.</p>
           ) : (
             <table
               style={{

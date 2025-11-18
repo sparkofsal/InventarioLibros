@@ -27,7 +27,7 @@ app.use('/api/autores', autoresRouter);
 // Lee el puerto desde las variables de entorno o usamos 3000 por defecto
 const PORT = process.env.PORT || 3000;
 
-// Iniciamos el servidor
+// Iniciamos el servidor obviamente con npm run dev
 app.listen(PORT, () => {
   console.log(`✅ Servidor backend escuchando en http://localhost:${PORT}`);
 });

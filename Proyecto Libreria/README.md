@@ -1,11 +1,9 @@
-# Proyecto Inventario de Libros  
+# Proyecto Inventario de Libros
 Armando Salazar
 
 Este proyecto es una aplicación web diseñada para gestionar el inventario de una librería.  
 Incluye una base de datos relacional en MySQL, un backend en Node.js con Express y un frontend construido en React con Vite.  
 La aplicación permite realizar un CRUD completo de libros, incluyendo su relación con autores.
-
----
 
 # Objetivo de este sistema
 
@@ -18,46 +16,19 @@ El sistema debía cumplir con los siguientes requisitos:
 - Desarrollar una interfaz web para mostrar y administrar los datos.
 - Realizar un CRUD completo.
 
----
-
 # Avance 1 – Análisis y diseño de la base de datos
 
-Para iniciar el proyecto se definieron los siguientes puntos:
-
-1. El lenguaje utilizado para el backend sería **JavaScript**, mediante Node.js y Express.
+1. El lenguaje utilizado para el backend elegi **JavaScript**, mediante Node.js y Express.
 2. La base de datos se desarrolló en **MySQL**, usando XAMPP y phpMyAdmin.
 3. Defini dos tablas principales:
    - `Autores`
    - `Libros`
-4. Relación requerida: **1 autor puede tener muchos libros**.
-5. Se diseñó un diagrama lógico simple de la base de datos.
-
-## Diagrama de Base de Datos
-
-```
-Autores (1) ----< (Muchos) Libros
-
-Autores:
-- id_autor (PK)
-- nombre
-- apellidos
-
-Libros:
-- id_libro (PK)
-- titulo
-- paginas
-- fecha_publicacion
-- editorial
-- id_autor (FK)
-```
-
----
 
 # Avance 2 – Creación de la base de datos y tablas
 
 Para este avance use XAMPP y phpMyAdmin.
 
-Pasos realizados:
+Pasos:
 
 1. Abrir XAMPP y activar Apache y MySQL.
 2. Entrar a phpMyAdmin y crear la base de datos `Libros`.
@@ -88,45 +59,25 @@ CREATE TABLE Libros (
     ON UPDATE CASCADE
 );
 ```
-
-5. Insertar al menos 40 registros entre ambas tablas para pruebas.
-
----
+Agregue una serie de registros para las pruebas, todo lo busque en Google, como ejemplos de libros con detalles.
 
 # Avance 3 – Backend y CRUD
 
-El backend se construyó con Node.js y Express.
+El backend lo desarrolle con Node.js
 
-## Tecnologías utilizadas
+## Tecnologías de backend
 - Node.js  
 - Express  
 - MySQL2  
-- CORS  
-- Dotenv  
-
-## Estructura del back
-
-```
-backend/
-│   .env
-│   package.json
-│
-└───src
-    │   index.js
-    │   db.js
-    └───routes
-        │   libros.routes.js
-        │   autores.routes.js
-```
 
 # Avance 4 – Frontend API y CRUD
 
-El frontend fue desarrollado con React utilizando Vite.
+El frontend lo desarrolle con React utilizando Vite.
 
 ## Tecnologías utilizadas
 - React  
 - Vite  
-- Fetch API  
+- Fetch API
 
 ## Funcionalidades implementadas
 
@@ -138,39 +89,22 @@ El frontend fue desarrollado con React utilizando Vite.
 - Actualización automática de la tabla una vez realizados cambios.
 - Diseño oscuro simple y limpio.
 
-## Estructura del front
-
-```
-frontend/
-│   index.html
-│   package.json
-└───src
-    │   App.jsx
-    │   main.jsx
-```
-
----
-
 # Instrucciones para ejecutar el proyecto en local
 
 Este proyecto requiere que el backend y el frontend se ejecuten por separado.
 
-## 1. Requisitos previos (importante)
+## 1. Requisitos necesarios (importante)
 
 - Node.js instalado.
 - XAMPP instalado y funcionando.
-- Base de datos “Libros” creada en MySQL.
+- Base de datos “Libros” creada en MySQL(myphpadmin).
 - Tablas “Autores” y “Libros” creadas y llenas con datos.
-
----
 
 ## 2. Ejecutar base de datos (XAMPP)
 
 1. Abrir XAMPP Control Panel.
 2. Activar Apache y MySQL.
 3. Entrar a phpMyAdmin y verificar que la base de datos “Libros” existe.
-
----
 
 ## 3. Ejecutar backend
 
@@ -209,8 +143,6 @@ npm run dev
 http://localhost:3000
 ```
 
----
-
 ## 4. Ejecutar frontend
 
 1. Abrir nueva terminal:
@@ -236,7 +168,6 @@ npm run dev
 ```
 http://localhost:5173
 ```
----
 
 # Conclusión
 
