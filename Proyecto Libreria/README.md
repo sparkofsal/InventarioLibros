@@ -171,6 +171,7 @@ http://localhost:5173
 
 # Conclusión
 
-Este proyecto integra la creación de una base de datos, un backend con API REST y un frontend moderno con React.  
-Permite manejar un inventario de libros de manera completa, aplicando conceptos de desarrollo y comunicación entre cliente y servidor.
+Este proyecto integra la creación de una base de datos, un backend con API REST y  frontend con React.
+
+Me sirve para manejar un inventario de libros de manera completa, aplicando conceptos de desarrollo y comunicación entre cliente y servidor.
 
